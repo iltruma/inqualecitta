@@ -1,10 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    background: linear-gradient(to right, #9af6ff, #71ff95);
 }
 
 h1 {
-    color: #fff;
+    color: #000;
+    font-weight:600;
 }
 
 .btn-group .btn {
