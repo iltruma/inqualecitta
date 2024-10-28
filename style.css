@@ -1,0 +1,43 @@
+body {
+  font-family: 'Roboto', sans-serif; /* Font moderno */
+  background-color: #f4f4f4; /* Sfondo grigio chiaro */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction:  
+ column; /* Pulsanti in colonna su schermi piccoli */
+  gap: 20px;
+}
+
+button {
+  background-color: #007bff; /* Blu */
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;  
+
+  transition: background-color  
+ 0.3s ease; /* Effetto hover */
+}
+
+button:hover {
+  background-color: #0056b3; /* Blu più scuro al passaggio del mouse */
+}
+
+@media (min-width: 768px) { /* Per schermi più grandi */
+  .container {
+    flex-direction: row; /* Pulsanti in riga */
+  }
+}
