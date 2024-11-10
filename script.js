@@ -4,6 +4,7 @@ const cities = ["Torino?", "Bolzano?", "Bressanone?", "Milano?", "Firenze?", "Ge
 let cityIndex = 0;
 
 document.getElementById("citta").innerText = cities[cityIndex];
+cityIndex = (cityIndex + 1) % cities.length;
 
 document.getElementById('play-tromba').addEventListener('click', () => {
     stopAudio();
