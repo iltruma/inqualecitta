@@ -19,3 +19,15 @@ function stopAudio() {
     trombaAudio.currentTime = 0;
     tarantellaAudio.currentTime = 0;
 }
+
+const cities = ["Torino?", "Bolzano?", "Bressanone?", "Milano?", "Firenze?", "Genova?", "Trieste?", "Bergamo?", "Verona?", "Piacenza?", "Novara?"];
+let cityIndex = 0;
+
+document.getElementById("tromba").onclick = function () {
+    document.getElementById("citta").innerText = cities[cityIndex];
+    cityIndex = (cityIndex + 1) % cities.length;
+};
+
+document.getElementById("tarantella").onclick = function () {
+    document.getElementById("citta").innerText = "E VAIIIIIIIII AMICO MIO";
+};
